@@ -53,7 +53,7 @@ dcoker-compose -f docker-compose-build.yaml push
 ```
 eksctl create cluster --name "microservices" --version 1.15 --nodegroup-name standard-workers --node-type t3.medium --nodes 3 --nodes-min 1 --nodes-max 4 --node-ami auto
 ```
-![eks](images/Project/6_creatingcluster.JPG) 
+![eks](Project/images/6_creatingcluster.JPG) 
 
 ### Updating Kubernetes Resources
 
