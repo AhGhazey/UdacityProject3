@@ -93,9 +93,6 @@ Apply all files:
 kubectl apply -f .
 ```
 
-
-
-
 ### Pods Status
 
 ```
