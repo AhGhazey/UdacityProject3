@@ -4,14 +4,14 @@ services:
     build:
       context: .
     image: ahmedghazey/reverseproxy 
-  backend_user:
-    build:
-      context: ../../udacity-c3-restapi-user
-    image: ahmedghazey/udacity-restapi-user
   backend_feed:
     build:
       context: ../../udacity-c3-restapi-feed  
     image: ahmedghazey/udacity-restapi-feed
+  backend_user:
+    build:
+      context: ../../udacity-c3-restapi-user
+    image: ahmedghazey/udacity-restapi-user 
   frontend:
     build:
       context: ../../udacity-c3-frontend  

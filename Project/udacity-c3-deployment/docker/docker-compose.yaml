@@ -6,10 +6,13 @@ services:
           - 8080:8080
       restart: always
       depends_on:
+        - backend-feed 
         - backend-user
-        - backend-feed     
-  backend-user:
-    image: ahmedghazey/udacity-restapi-user
+        
+  backend-feed:
+    image: ahmedghazey/udacity-restapi-feed
+    volumes:
+      - $HOME/.aws:/root/.aws
     environment:
       POSTGRESS_USERNAME: $POSTGRESS_USERNAME
       POSTGRESS_PASSWORD: $POSTGRESS_PASSWORD 
@@ -20,8 +23,8 @@ services:
       AWS_BUCKET: $AWS_BUCKET
       JWT_SECRET: $JWT_SECRET
       URL: "http://localhost:8100"
-  backend-feed:
-    image: ahmedghazey/udacity-restapi-feed
+  backend-user:
+    image: ahmedghazey/udacity-restapi-user
     volumes:
       - $HOME/.aws:/root/.aws
     environment:
