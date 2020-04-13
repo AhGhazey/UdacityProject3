@@ -30,7 +30,7 @@ docker images
 
 ### Docker Compose Up:
 ```
-docker compose up
+docker-compose up
 ``` 
 
 ![DC](Project/images/3_dockerComposeUp.JPG) 
@@ -111,4 +111,12 @@ kubectl port-forward service/frontend 8100:8100
 kubectl port-forward service/reverseproxy 8080:8080 
 ```
 ![SPF](Project/images/9_PortForwarding.JPG) 
+
+### Travis
+![Travis](Project/images/10_travisBuild.JPG) 
+
+### Aplication Running
+
+![App](Project/images/11_App.JPG) 
+
 
