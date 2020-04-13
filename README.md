@@ -86,7 +86,7 @@ kubectl apply -f env-secret.yaml
 kubectl apply -f env-configmap.yaml
 ```
 
-![CS](Project/images/7_create secrets.JPG)
+![CS](Project/images/7_createsecrets.JPG)
 
 Apply all files:
 ```
